@@ -1,29 +1,48 @@
 <!doctype html>
 <html>
+    <!--Head es el nombre en la pestaña de la propia página, 
+        y body el propio contenido-->
     <head>
+        <!--meta se usa para dar forma a la propia página HTML,
+        y aquí también aprovechamos para darle nombre y autor a la página-->
         <meta charset="utf-8"/>
         <title>Marriage proposal #34</title>
         <meta name="Description" Content="Another marriage proposal lmao"/>
         <meta name="Author" Content="Rubén"/>
     </head>
     <body>
+        <!--Header y Div son algunas de las distintas secciones
+        que se pueden crear para dividir el contenido en secciones;
+        además, permiten tener propiedades de texto como "text-align",
+        es decir, que todo el texto dentro de la sección tenga x propiedad.-->
         <header>
             <h1 style="text-align: center;">Marriage proposal #34</h1>
         </header>
         <div style="text-align: center;">
+            <!--"p" se usa para párrafos, y "a" puede ser usado para
+            hipervínculos. Luego, también "span" sirve para seleccionar
+            "de forma silenciosa" un trozo de texto y darle propiedades
+            distintas al resto del párrafo.
+            "br" sirve para hacer saltos de línea-->
             <p>Another time <span style="color:indianred">seriosly?</span></p>
             <p>Oh wait, but now <br> you can actually say yes???</p>
             <a target="_blank" style="color:indianred" href="https://pin.it/44bDKfg">For you to make up your mind</a> <br><br>
             <a target="_blank" style="color:indianred" href="https://www.pinterest.es/search/pins/?q=ducks&rs=typed&term_meta[]=ducks%7Ctyped">Just a bit more</a>
             <br>
             <br>
+            <!--Los formularios pueden tener formas muy distintas y se pueden
+            usar distintos métodos de enviar la información ("method").
+            Es importante recordar usar etiquetas "for" y "id" (conectadas) y
+            ponerles nombres "name"-->
             <form action="/form" method="post">
                 <label style="color:indianred" for="didshesayyes">Would you like to marry me?</label> <br><br>
                 <input type="text" id="didshesayyes" name="didshesayyes"> <br><br>
                 <button type="submit">Send</button>
             </form>
             <br>
+            <!--con los atributos de img podemos cambiar su tamaño-->
             <img src="img\robertduck.jpg" width="300" height="396"/>
+            <img src="https://i.pinimg.com/236x/5c/cb/0b/5ccb0b4d53be8d1883795ff9ad2c0342--garden-products-gazebo.jpg"
         </div>
     </body>
 </html>
